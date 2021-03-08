@@ -1,0 +1,15 @@
+<view class="wrapped">
+      <view class="con">
+        <view class="top">
+              <button class="accept">店铺</button>
+        </view>
+        <block wx:for="{{addBox}}" wx:key="index" class="box">
+              <view class="middle" bindtap="jump" data-index="{{index}}">
+                    <view class="content">内容:</view>
+                    <view class="content">{{content[index]}}</view>
+                    <view class="content">店铺名称:</view>
+                    <view class="content">{{create[index]}}</view>
+              </view>
+        </block>
+      </view>
+</view>
